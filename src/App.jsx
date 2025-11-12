@@ -66,11 +66,21 @@ function App() {
   }
 
   return (
-   <>
-      <Container>
-        <InputGroup>
+   <> 
+      <Container className="my-4"> 
+        <h1 className="text-center fw-bold">
+          AlbumAtlas
+        </h1>
+
+        <h3 className="text-center text-muted mb-4">
+          Discover albums from your favorite artists.
+        </h3>
+      </Container>
+      
+      <Container className="d-flex justify-content-center my-3">
+        <InputGroup >
           <FormControl
-            placeholder = "look up an artist"
+            placeholder = "Enter artist name ..."
             type = "input"
             arial-label = "Search For An Artist"
             onKeyDown = {(event) => {
@@ -79,10 +89,12 @@ function App() {
               }
             }} // search function
 
+            className="search-input-field"
+
             onChange = {(event) => setSearchInput(event.target.value)} // setSearch
             style = {{
               width: "300px",
-              height: "35px",
+              height: "39px",
               borderWidth: "0px",
               borderStyle: "solid",
               borderRadius: "5px",
@@ -91,7 +103,7 @@ function App() {
             }}
           />
 
-          <Button onClick={search}>search</Button>
+          <Button onClick={search} className="search-btn">Search</Button>
         </InputGroup>
       </Container>
 
@@ -138,6 +150,7 @@ function App() {
                 </Card.Text>
                 <Button
                   href={album.external_urls.spotify}
+                  target="_blank"
                   style={{
                     backgroundColor: '#98A998',
                     color: 'black',

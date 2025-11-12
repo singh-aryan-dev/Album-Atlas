@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(218, 19, 19, 0.87);
-  background-color: #FCF7EC;
+  background-color:#fafafa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,11 +28,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color:#fafafa;
+
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #000000;
 }
 
 button {
@@ -44,7 +48,7 @@ button {
   font-family: inherit;
   background-color: #98A998;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s; 
 }
 button:hover {
   border-color: #000000;
@@ -52,6 +56,29 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.search-btn{
+  background-color: #000000;
+  color: #fafafa;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.search-btn:hover {
+  background-color: #333333 
+}
+
+.search-input-field{
+  background-color: #e5e5e5;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+}
+
+::placeholder {
+  font-weight: bold;
+  color:#000000;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media (prefers-color-scheme: light) {
